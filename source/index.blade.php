@@ -137,9 +137,10 @@
                 Optimize document management in the public sector with LibreSign. 
                 Our solution provides effective administration to handle specific 
                 government documentation, ensuring security, speed, and strict 
-                compliance with the General Data Protection Law (LGPD). Simplify 
-                bureaucratic processes, expedite document signing, and promote 
-                more efficient management with LibreSign for the public sector.
+                compliance with the General Data Protection Regulation (GDPR). 
+                Simplify bureaucratic processes, expedite document signing, 
+                and promote more efficient management with LibreSign for the 
+                public sector.
               </p>
             </div>
           </div>
@@ -164,7 +165,7 @@
                 Our electronic signature and document management solution 
                 streamline workflows, reducing time spent on manual processes. 
                 Achieve greater productivity, promote document security, and 
-                ensure compliance with the General Data Protection Law (LGPD), 
+                ensure compliance with the General Data Protection Regulation (GDPR), 
                 providing an agile experience for your clients and collaborators.
               </p>
             </div>
@@ -315,7 +316,7 @@
                     after being signed - as well as numbers and records the 
                     times of each signature carried out in the document. In 
                     this way, the system meets all the requirements of the 
-                    LGPD - General Data Protection Law.
+                    General Data Protection Regulation (GDPR).
                   </div>
                 </div>
               </div>
