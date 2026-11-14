@@ -94,7 +94,7 @@ jobs:
             '{commit_sha: $sha, pr_number: $num, pr_title: $title, repository: $repo, timestamp: $ts}' \
             > build_production/_deployment-info.json
 
-      - uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4.2.0
+      - uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
