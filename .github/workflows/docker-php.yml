@@ -50,7 +50,7 @@ jobs:
           DOCKERFILE=$([[ -f ".docker/php/Dockerfile" ]] && echo ".docker/php/Dockerfile" || echo ".docker/Dockerfile.php")
           echo "DOCKERFILE=$DOCKERFILE" >> $GITHUB_OUTPUT
       - name: Build container image
-        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
         with:
           push: false
           context: .docker/php
@@ -61,7 +61,7 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
       - name: Push container image
-        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
         if: github.ref == 'refs/heads/main'
         with:
           push: true
