@@ -6,7 +6,8 @@
         "build-assets": "NODE_ENV=local vite build",
         "staging": "NODE_ENV=staging vite build",
         "prod": "NODE_ENV=production vite build",
-        "test:js": "node --test tests/js/*.test.mjs"
+        "test:js": "node --test tests/js/*.test.mjs",
+        "test:html": "node --test tests/js/*.smoke.mjs"
     },
     "devDependencies": {
         "@tighten/jigsaw-vite-plugin": "^2.0.0",

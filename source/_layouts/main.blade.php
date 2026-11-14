@@ -36,7 +36,7 @@
     <meta property="og:url" content="{{ $canonicalUrl }}">
     <meta property="og:title" content="{{ $localizedSeoTitle }}">
     <meta property="og:description" content="{{ $localizedSeoDescription }}">
-    <meta property="og:image" content="{{ rtrim($page->baseUrl, '/') }}/assets/images/logo/logo-libresign-large.png">
+    <meta property="og:image" content="{{ $absoluteSeoUrl(rtrim($page->baseUrl, '/') . '/assets/images/logo/logo-libresign-large.png') }}">
     <meta property="og:site_name" content="LibreSign">
     <meta property="og:locale" content="{{ str_replace('-', '_', current_path_locale($page) ?: 'en') }}">
 
@@ -45,7 +45,7 @@
     <meta name="twitter:url" content="{{ $canonicalUrl }}">
     <meta name="twitter:title" content="{{ $localizedSeoTitle }}">
     <meta name="twitter:description" content="{{ $localizedSeoDescription }}">
-    <meta name="twitter:image" content="{{ rtrim($page->baseUrl, '/') }}/assets/images/logo/logo-libresign-large.png">
+    <meta name="twitter:image" content="{{ $absoluteSeoUrl(rtrim($page->baseUrl, '/') . '/assets/images/logo/logo-libresign-large.png') }}">
     <meta name="twitter:site" content="@libresign">
 
     <!--====== Favicon Icon ======-->

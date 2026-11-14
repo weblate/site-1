@@ -68,9 +68,10 @@ description: "Run LibreSign on a compatible Nextcloud installation, connect exte
         <h2 id="it-requirements-heading">{{ $page->t('Installation and integration requirements') }}</h2>
         <p>{{ $page->t('LibreSign is an app for a compatible Nextcloud server, not an independent standalone signing server. API integrations use an authorized Nextcloud account and its installation-specific permissions. Depending on configuration, external recipients can sign through invitations without a Nextcloud account.') }}</p>
         <p>{{ $page->t('External applications can keep their own interface and workflows while their backend requests signatures and retrieves signed documents only with appropriate authorization. Consult the documentation for your installed LibreSign version.') }}</p>
-        <a href="{{ locale_url($page, 'posts/libresign-api-guide') }}">{{ $page->t('Read the API Integration Guide') }}</a>
-        <span aria-hidden="true"> · </span>
-        <a href="https://docs.libresign.coop/">{{ $page->t('Official Documentation') }}</a>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="{{ locale_url($page, 'posts/libresign-api-guide') }}" class="btn ud-btn-solid-brand">{{ $page->t('Read the API Integration Guide') }}</a>
+          <a href="https://docs.libresign.coop/" class="btn ud-btn-outline-brand" target="_blank" rel="noopener noreferrer">{{ $page->t('Official Documentation') }}</a>
+        </div>
       </div>
     </section>
     @include('_partials.home.card-grid-section', [

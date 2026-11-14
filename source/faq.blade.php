@@ -65,11 +65,10 @@ description: "Answers to common questions about LibreSign: how it works, digital
 
       <div class="text-center mt-5 pt-2">
         <p class="mb-3">{{ $page->t('For installation, access permissions, external signing invitations, and API integration details, consult the technical guides for your installed LibreSign version.') }}</p>
-        <p class="mb-4">
-          <a href="{{ locale_url($page, 'posts/libresign-api-guide') }}">{{ $page->t('API Integration Guide') }}</a>
-          <span aria-hidden="true"> · </span>
-          <a href="https://docs.libresign.coop/">{{ $page->t('Official Documentation') }}</a>
-        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+          <a href="{{ locale_url($page, 'posts/libresign-api-guide') }}" class="btn ud-btn-solid-brand">{{ $page->t('API Integration Guide') }}</a>
+          <a href="https://docs.libresign.coop/" class="btn ud-btn-outline-brand" target="_blank" rel="noopener noreferrer">{{ $page->t('Official Documentation') }}</a>
+        </div>
         <p class="mb-4">{{ $page->t('Still have questions? Our team is ready to help.') }}</p>
         <a href="{{ locale_url($page, 'contact-us') }}" class="btn ud-btn-solid-brand">
           {{ $page->t('Talk to Our Specialists') }}
